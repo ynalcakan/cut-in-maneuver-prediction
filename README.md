@@ -10,6 +10,9 @@ It is computationally efficient compared to other vision-based methods since it 
 To evaluate our approach, we have worked on a publicly available dataset and tested several classification models.
 Experiment results reveal that 0.9325 accuracy can be obtained with side-aware two-class (cut-in vs. lane-pass) classification models.
 
+Proposed method architecture:
+![pipeline](https://github.com/ynalcakan/cut-in-maneuver-prediction/blob/main/figures/pipeline_v5.png?raw=true)
+
 ## Information about the repository:
 
 Proposed pipeline's classification code is available in "**maneuver_prediction_train_and_test_LSTM.py**".
