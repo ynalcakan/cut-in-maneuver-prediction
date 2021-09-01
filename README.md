@@ -1,14 +1,9 @@
 # Monocular Vision-based Prediction of Cut-in Maneuvers with LSTM Networks
 
 ## Abstract
-Advanced driver assistance and automated driving systems should be capable of predicting and avoiding
-dangerous situations. 
-In this study, we propose a method to predict the potentially dangerous lane changes (cut-ins) of the vehicles in front.
-We follow a computer vision-based approach that only employs a single in-vehicle RGB camera and we classify the target vehicle's maneuver based on the recent video frames. 
-Our algorithm consists of a CNN-based vehicle detection and tracking step and an LSTM-based maneuver classification step.
-It is computationally efficient compared to other vision-based methods since it exploits a small number of features for the classification step rather than feeding CNNs with RGB frames.
-To evaluate our approach, we have worked on a publicly available dataset and tested several classification models.
-Experiment results reveal that 0.9325 accuracy can be obtained with side-aware two-class (cut-in vs. lane-pass) classification models.
+
+Advanced driver assistance and automated driving systems should be capable of predicting and avoiding dangerous situations. In this study, we propose a method to predict potentially dangerous lane changes (cut-ins) of the vehicles in front. We follow a computer vision-based approach that only employs a single in-vehicle RGB camera and we classify the target vehicle's maneuver based on the recent video frames. Our algorithm consists of a CNN-based vehicle detection and tracking step and an LSTM-based maneuver classification step. It is computationally efficient compared to other vision-based methods since it exploits a small number of features for the classification step rather than feeding CNNs with RGB frames. We evaluated our approach on a publicly available driving dataset and a lane change detection dataset.
+We obtained 0.9585 accuracy with side-aware two-class (cut-in vs. lane-pass) classification models. Experiment results also reveal that, when used for lane change detection, our approach outperforms state-of-the-art approaches.
 
 Proposed method architecture:
 ![pipeline](https://github.com/ynalcakan/cut-in-maneuver-prediction/blob/main/figures/pipeline_v5.png?raw=true)
@@ -24,4 +19,4 @@ About the data we used:<br/>
  - First, you should create a user at Berkeley Deep Drive Dataset portal (https://bdd-data.berkeley.edu/).
  - After you download the training data from BDD-100K, you can cut cut-in and lane-pass maneuvers from them by using the data.csv file.
 
-**Note:** information about data.csv file will be here after the ITSC.
+**Note:** information about data.csv file will be here after the conference.
